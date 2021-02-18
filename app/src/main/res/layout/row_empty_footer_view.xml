@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--하단에 빈공간 사입을 위한 뷰-->
+<!-- - ContentListFragment 사용-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    android:background="@color/transparent">
+
+</FrameLayout>

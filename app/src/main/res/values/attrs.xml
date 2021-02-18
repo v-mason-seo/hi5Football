@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MessageInput">
+        <attr name="inputButtonBackground" format="reference"/>
+        <attr name="inputButtonDefaultBgColor" format="color|reference"/>
+        <attr name="inputButtonDefaultBgPressedColor" format="color|reference"/>
+        <attr name="inputButtonDefaultBgDisabledColor" format="color|reference"/>
+
+        <attr name="inputButtonIcon" format="reference"/>
+        <attr name="inputButtonDefaultIconColor" format="color|reference"/>
+        <attr name="inputButtonDefaultIconPressedColor" format="color|reference"/>
+        <attr name="inputButtonDefaultIconDisabledColor" format="color|reference"/>
+
+        <attr name="inputButtonMargin" format="dimension|reference"/>
+        <attr name="inputButtonWidth" format="dimension|reference"/>
+        <attr name="inputButtonHeight" format="dimension|reference"/>
+
+        <attr name="showAttachmentButton" format="boolean"/>
+        <attr name="attachmentButtonBackground" format="reference"/>
+        <attr name="attachmentButtonDefaultBgColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultBgPressedColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultBgDisabledColor" format="color|reference"/>
+
+        <attr name="attachmentButtonIcon" format="reference"/>
+        <attr name="attachmentButtonDefaultIconColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultIconPressedColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultIconDisabledColor" format="color|reference"/>
+
+        <attr name="attachmentButtonMargin" format="dimension|reference"/>
+        <attr name="attachmentButtonWidth" format="dimension|reference"/>
+        <attr name="attachmentButtonHeight" format="dimension|reference"/>
+
+        <attr name="inputMaxLines" format="integer"/>
+        <attr name="inputHint" format="string"/>
+
+        <attr name="inputText" format="string"/>
+        <attr name="inputTextSize" format="dimension|reference"/>
+        <attr name="inputTextColor" format="color|reference"/>
+        <attr name="inputHintColor" format="color|reference"/>
+
+        <attr name="inputBackground" format="reference"/>
+        <attr name="inputCursorDrawable" format="reference"/>
+    </declare-styleable>
+
+
+    <attr name="sizeStyle" format="reference" />
+    <attr name="selectedTextStyle" format="reference" />
+    <attr name="colorStyle" format="reference" />
+
+    <!--HearyLayout-->
+
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HeartLayout2">
+        <attr name="initX2" format="dimension" />
+        <attr name="initY2" format="dimension" />
+        <attr name="xRand2" format="dimension" />
+        <attr name="animLengthRand2" format="dimension" />
+        <attr name="xPointFactor2" format="dimension" />
+        <attr name="animLength2" format="dimension" />
+        <attr name="heart_width2" format="dimension" />
+        <attr name="heart_height2" format="dimension" />
+        <attr name="bezierFactor2" format="integer" />
+        <attr name="anim_duration2" format="integer" />
+    </declare-styleable>
+
+    <!--뺏지-->
+    <declare-styleable name="MaterialBadgeTextView">
+        <attr name="android:background" />
+        <attr name="mbtv_border_width" format="dimension" />
+        <attr name="mbtv_border_color" format="color" />
+        <attr name="mbtv_border_alpha" format="float" />
+        <attr name="mbtv_type" format="enum">
+            <enum name="shadow_gradual" value="1"/>
+            <enum name="shadow_alpha" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_send_content"
+        android:title="@string/menu_submit"
+        android:orderInCategory="101"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <!--<item android:id="@+id/action_send_content2"-->
+        <!--android:title="T"-->
+        <!--android:orderInCategory="102"-->
+        <!--android:visible="true"-->
+        <!--android:icon="@drawable/ic_empty_emblem_vector_1"-->
+        <!--android:iconTint="@color/md_lime_300"-->
+        <!--app:showAsAction="always" />-->
+
+</menu>

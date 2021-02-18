@@ -1,0 +1,231 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "3002268f9dfee36b2c53e1de861d3d69",
+    "entities": [
+      {
+        "tableName": "boards",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`board_id` INTEGER NOT NULL, `title` TEXT, `subtitle` TEXT, `short_name` TEXT, `type_gb` TEXT, `group` INTEGER NOT NULL, `group_name` TEXT, `img_url` INTEGER NOT NULL, `has_best` INTEGER NOT NULL, `use_yn` INTEGER NOT NULL, `has_instance_text` INTEGER NOT NULL, `instance_text` TEXT, `is_sel` INTEGER NOT NULL, `is_sel_best` INTEGER NOT NULL, PRIMARY KEY(`board_id`))",
+        "fields": [
+          {
+            "fieldPath": "boardId",
+            "columnName": "board_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subtitle",
+            "columnName": "subtitle",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shortName",
+            "columnName": "short_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "typeGb",
+            "columnName": "type_gb",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "group",
+            "columnName": "group",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groupName",
+            "columnName": "group_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgUrl",
+            "columnName": "img_url",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasBest",
+            "columnName": "has_best",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "useYn",
+            "columnName": "use_yn",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasInstanceText",
+            "columnName": "has_instance_text",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "instanceText",
+            "columnName": "instance_text",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isSelected",
+            "columnName": "is_sel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSelectedBest",
+            "columnName": "is_sel_best",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "board_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "football_chats",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mention_type` TEXT NOT NULL, `mention_id` INTEGER NOT NULL, `player` TEXT, `team` TEXT, `match` TEXT, `board` TEXT, `comp` TEXT, `cnt` INTEGER NOT NULL, `title` TEXT, `content_id` INTEGER NOT NULL, `updated` INTEGER, PRIMARY KEY(`mention_type`, `mention_id`))",
+        "fields": [
+          {
+            "fieldPath": "mentionType",
+            "columnName": "mention_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mentionId",
+            "columnName": "mention_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "player",
+            "columnName": "player",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team",
+            "columnName": "team",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match",
+            "columnName": "match",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "board",
+            "columnName": "board",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "competition",
+            "columnName": "comp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "count",
+            "columnName": "cnt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "content_id",
+            "columnName": "content_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated",
+            "columnName": "updated",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "mention_type",
+            "mention_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "football_chat_attrs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`attr_mention_type` TEXT NOT NULL, `attr_mention_id` INTEGER NOT NULL, `is_sel` INTEGER NOT NULL, `read_cnt` INTEGER NOT NULL, PRIMARY KEY(`attr_mention_type`, `attr_mention_id`))",
+        "fields": [
+          {
+            "fieldPath": "mentionType",
+            "columnName": "attr_mention_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mentionId",
+            "columnName": "attr_mention_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSelected",
+            "columnName": "is_sel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "readCount",
+            "columnName": "read_cnt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "attr_mention_type",
+            "attr_mention_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"3002268f9dfee36b2c53e1de861d3d69\")"
+    ]
+  }
+}

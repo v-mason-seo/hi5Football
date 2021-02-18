@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CardView -->
+    <dimen name="cardview_shadow_size">1dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+
+    <!--FilpView-->
+    <dimen name="fv_normal_elevated">48dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="keyboard_height">230dip</dimen>
+
+    <!--탭 레이아웃-->
+    <dimen name="tab_normal_height">48dp</dimen>
+    <dimen name="tab_small_height">32dp</dimen>
+    <dimen name="tab_left_padding">0dp</dimen>
+    <dimen name="tab_right_padding">0dp</dimen>
+
+    <!--row_contents_list_item-->
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right_handle">22dp</dimen>
+
+    <dimen name="avatar_xlarge_size">78dp</dimen>
+    <dimen name="avatar_large_size">64dp</dimen>
+    <dimen name="avatar_medium_size">42dp</dimen>
+    <dimen name="avatar_small_size">28dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+
+    <!--아바타 리플 사이즈-->
+    <dimen name="avatar_small_ripple_radius">28dp</dimen> <!-- avatar_size / 2 -->
+
+
+    <!--ScrollableUseCaseItem-->
+    <dimen name="icon_touchable_component_mini">40dp</dimen>
+
+
+    <!--Chatkit message input-->
+    <dimen name="input_button_width">36dp</dimen>
+    <dimen name="input_button_height">36dp</dimen>
+    <dimen name="input_button_margin">16dp</dimen>
+    <dimen name="input_text_size">17sp</dimen>
+    <dimen name="input_padding_left">16sp</dimen>
+    <dimen name="input_padding_right">16sp</dimen>
+    <dimen name="input_padding_top">8sp</dimen>
+    <dimen name="input_padding_bottom">8sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <!--Test-->
+    <dimen name="product_color_size">32dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+
+
+    <!--Divider-->
+    <dimen name="card_insets">8dp</dimen>
+    <dimen name="card_insets2">4dp</dimen>
+
+
+    <!--HearyLayout-->
+    <dimen name="heart_anim_bezier_x_rand">40.0dp</dimen>
+    <dimen name="heart_anim_init_x">50.0dp</dimen>
+    <dimen name="heart_anim_init_y">25.0dp</dimen>
+    <dimen name="heart_anim_length">100.0dp</dimen>
+    <dimen name="heart_anim_length_rand">150.0dp</dimen>
+    <dimen name="heart_anim_x_point_factor">30.0dp</dimen>
+    <dimen name="heart_size_height">27.3dp</dimen>
+    <dimen name="heart_size_width">32.5dp</dimen>
+    <!--HearyLayout-->
+
+
+    <!--HearyLayout2-->
+    <dimen name="heart2_anim_bezier_x_rand">40.0dp</dimen>
+    <dimen name="heart2_anim_init_x">10.0dp</dimen>
+    <dimen name="heart2_anim_init_y">125.0dp</dimen>
+    <dimen name="heart2_anim_length">100.0dp</dimen>
+    <dimen name="heart2_anim_length_rand">150.0dp</dimen>
+    <dimen name="heart2_anim_x_point_factor">90.0dp</dimen>
+    <dimen name="heart2_size_height">42dp</dimen>
+    <dimen name="heart2_size_width">42dp</dimen>
+    <!--HearyLayout-->
+</resources>

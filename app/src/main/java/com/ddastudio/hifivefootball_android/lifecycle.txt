@@ -1,0 +1,129 @@
+[LifeCycle]
+
+Lifecycle 클래스는 액티비티나 프래그먼트의 라이브사이클 상태를 가지며, 다른 객체가
+이 상태를 관찰할수 있도록한다.
+
+Lifecycle.Event
+ON_ANY
+ON_CREATE
+ON_DESTROY
+ON_PAUSE
+ON_RESUME
+ON_START
+ON_STOP
+
+
+Lifecycle.State
+
+CREATED: onCreate() 이후나 onStop() 직전에 바뀜
+DESTROYED : onDestory()가 불리기 직전에 바뀜
+INITIALIZED: onCreate()가 불리기 직전에 바뀜
+RESUMED: onResume()이 불린 이후에 바뀜
+STARTED:  onStart() 이후나, onPause() 직전에 바뀜
+
+-------------------------------------------------------------------------
+
+//
+// [변경전]
+//
+class MyLocationListener {
+    public MyLocationListener(Context context, Callback callback) {
+        // ...
+    }
+
+    void start() {
+        // connect to system location service
+    }
+
+    void stop() {
+        // disconnect from system location service
+    }
+}
+
+//
+// [변경후]
+// - 액티비티에서 전달바닫은 Lifecycle lifecycle 객체를 통해서 
+// - getCurrentState() state 상태를 얻고
+// - isAtLeast() 현재 상태를 확인할 수 있다.
+//
+class MyLocationListener implements LifecycleObserver {
+    private boolean enabled = false;
+
+    public MyLocationListener(Context context, Lifecycle lifecycle, Callback callback) {
+       ...
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    void start() {
+        if (enabled) {
+           // connect
+        }
+    }
+
+    public void enable() {
+        enabled = true;
+        if (lifecycle.getState().isAtLeast(STARTED)) {
+            // connect if not connected
+        }
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+    void stop() {
+        // disconnect if connected
+    }
+}
+
+//
+// 액티비티에서 getLifecycle() 전달한다.
+//
+class MyActivity extends LifecycleActivity {
+    private MyLocationListener myLocationListener;
+
+    public void onCreate(...) {
+        myLocationListener = new MyLocationListener(this, getLifecycle(), location -> {
+            // update UI
+        });
+        Util.checkUserStatus(result -> {
+            if (result) {
+                myLocationListener.enable();
+            }
+        });
+  }
+}
+
+
+-----------------------------------------------------------------------------------
+
+
+[Best Practice]
+
+1. Activity나 Fragment같은 UI controller를 최대한 가볍게 유지하라. 
+   UI controller가 데이터를 수집하지 않도록 하고 이를 ViewModel에 위임하라.
+
+2. LiveData를 observing하여, View에 변경사항을 반영하도록 구성한다.
+
+3. ViewModel은 UI controller와 나머지 앱 구성요소를 연결하는 역할을 하도록 한다. 
+   ViewModel에서 data를 직접 fetch하는것이 아니라, fetching 역할을 하는 적절한 component와 연결하는 작업을 해야한다.
+
+4. Data binding을 사용하면 view와 UI component간 관계를 좀더 clean하게 해줄 수 있다.
+
+5. UI가 복잡하다면 Presenter를 이용하여 UI 변경을 관리하라.
+
+6. ☆☆☆☆ ViewModel에서 view나 Activity context를 참조하면 안된다. 
+          ViewModel은 activity와 생명주기가 다른기 때문에 leak을 발생시킬 수 있다.
+
+
+
+-----------------------------------------------------------------------------------
+
+[Custom activity나 fragment에서 LifecycleOwner의 구현]
+
+public class MyFragment extends Fragment implements LifecycleRegistryOwner {
+    
+    LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
+ 
+    @Override
+    public LifecycleRegistry getLifecycle() {
+        return lifecycleRegistry;
+    }
+}

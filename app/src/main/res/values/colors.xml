@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/md_teal_300</color>
+    <color name="colorPrimaryDark">@color/md_teal_600</color>
+    <color name="colorAccent">@color/md_green_300</color>
+    <color name="text_primary_dark">#de000000</color> <!-- 87% -->
+
+
+    <!--reply color-->
+    <color name="reply_blue_1">#4A6572</color>
+    <color name="reply_blue_2">#344955</color>
+    <color name="reply_blue_3">#232F34</color>
+    <color name="reply_accent">#F9AA33</color>
+
+
+    <color name="rating_color_8">#1E90FF</color>
+
+
+    <!--탭레이아웃-->
+
+    <color name="tab_text_enabled">@color/md_white_1000</color>
+    <color name="tab_text_disabled">@color/md_grey_600</color>
+
+    <!--탭레이아웃-->
+
+
+    <!--Swiperefreshlayout colors-->
+
+    <color name="progress_color1">#FF33B5E5</color>
+    <color name="progress_color2">#FFAA66CC</color>
+    <color name="progress_color3">#FF99CC00</color>
+    <color name="progress_color4">#FFFFBB33</color>
+
+    <!--Swiperefreshlayout colors-->
+
+
+    <!--Chatkit message input-->
+
+    <color name="white">#ffffff</color>
+    <color name="white60">#a0ffffff</color>
+    <color name="white_two">#efefef</color>
+    <color name="white_three">#ebebeb</color>
+    <color name="white_four">#e0e0e0</color>
+    <color name="white_five">#dadada</color>
+    <color name="blue">#031cd7</color>
+    <color name="black">#000000</color>
+    <color name="gray">#333333</color>
+    <color name="dark_gray">#282a2b</color>
+    <color name="dark_grey_two">#191a1b</color>
+    <color name="warm_grey">#7f7f7f</color>
+    <color name="warm_grey_two">#9c9c9c</color>
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="warm_grey_four">#979797</color>
+    <color name="dark_mint">#51c05c</color>
+    <color name="cornflower_blue_two">#4f62d7</color>
+    <color name="cornflower_blue_two_24">#3d4f62d7</color>
+    <color name="cornflower_blue_two_dark">#475bd4</color>
+    <color name="cornflower_blue_light_40">#64bec5f7</color>
+
+    <color name="dialog_divider">@color/white_three</color>
+    <color name="dialog_title_text">@color/dark_gray</color>
+    <color name="dialog_message_text">@color/warm_grey</color>
+    <color name="dialog_date_text">@color/warm_grey_two</color>
+    <color name="dialog_unread_text">@color/white</color>
+    <color name="dialog_unread_bubble">@color/dark_mint</color>
+
+    <!--Chatkit message input-->
+
+
+    <!--이슈-->
+
+    <color name="issue_status_bar">#EE212121</color>
+
+    <!--이슈-->
+
+
+    <!--Player rating -->
+    <array name="home_team_colors">
+        <item>#C5EFF7</item>
+        <item>#81CFE0</item>
+        <item>#89C4F4</item>
+        <item>#19B5FE</item>
+        <item>#6BB9F0</item>
+        <item>#52B3D9</item>
+        <item>#59ABE3</item>
+        <item>#22A7F0</item>
+        <item>#3498DB</item>
+        <item>#1E8BC3</item>
+        <item>#4183D7</item>
+        <item>#3A539B</item>
+        <item>#446CB3</item>
+        <item>#5C97BF</item>
+        <item>#4B77BE</item>
+        <item>#2574A9</item>
+        <item>#67809F</item>
+        <item>#1F3A93</item>
+        <item>#336E7B</item>
+        <item>#013243</item>
+        <item>#34495E</item>
+        <item>#2C3E50</item>
+        <item>#22313F</item>
+    </array>
+
+    <array name="away_team_colors">
+        <item>#91B496</item>
+        <item>#4ECDC4</item>
+        <item>#A2DED0</item>
+        <item>#87D37C</item>
+        <item>#90C695</item>
+        <item>#26A65B</item>
+        <item>#03C9A9</item>
+        <item>#68C3A3</item>
+        <item>#65C6BB</item>
+        <item>#1BBC9B</item>
+        <item>#1BA39C</item>
+        <item>#36D7B7</item>
+        <item>#C8F7C5</item>
+        <item>#86E2D5</item>
+        <item>#2ECC71</item>
+        <item>#16A085</item>
+        <item>#3FC380</item>
+        <item>#019875</item>
+        <item>#03A678</item>
+        <item>#2ABB9B</item>
+        <item>#00B16A</item>
+        <item>#1E824C</item>
+        <item>#049372</item>
+        <item>#26C281</item>
+    </array>
+
+    <color name="grayIconTint">#727272</color>
+
+    <color name="gradientPeriodicClouds_c1">#3453d1</color>
+    <color name="gradientPeriodicClouds_c2">#6d69ff</color>
+    <color name="gradientPeriodicClouds_c3">#cd47c6</color>
+
+    <array name="gradientPeriodicClouds">
+        <item>@color/gradientPeriodicClouds_c1</item>
+        <item>@color/gradientPeriodicClouds_c2</item>
+        <item>@color/gradientPeriodicClouds_c3</item>
+    </array>
+
+    <color name="gradientCloudy_c1">#62bff5</color>
+    <color name="gradientCloudy_c2">#61b3e5</color>
+    <color name="gradientCloudy_c3">#5d8fb2</color>
+
+    <array name="gradientCloudy">
+        <item>@color/gradientCloudy_c1</item>
+        <item>@color/gradientCloudy_c2</item>
+        <item>@color/gradientCloudy_c3</item>
+    </array>
+
+    <color name="gradientMostlyCloudy_c1">#51bbf5</color>
+    <color name="gradientMostlyCloudy_c2">#71c3ee</color>
+    <color name="gradientMostlyCloudy_c3">#f3e5d2</color>
+
+    <array name="gradientMostlyCloudy">
+        <item>@color/gradientMostlyCloudy_c1</item>
+        <item>@color/gradientMostlyCloudy_c2</item>
+        <item>@color/gradientMostlyCloudy_c3</item>
+    </array>
+
+    <color name="gradientPartlyCloudy_c1">#5b64be</color>
+    <color name="gradientPartlyCloudy_c2">#6084df</color>
+    <color name="gradientPartlyCloudy_c3">#64a2ff</color>
+
+    <array name="gradientPartlyCloudy">
+        <item>@color/gradientPartlyCloudy_c1</item>
+        <item>@color/gradientPartlyCloudy_c2</item>
+        <item>@color/gradientPartlyCloudy_c3</item>
+    </array>
+
+    <color name="gradientClear_c1">#6d4fbe</color>
+    <color name="gradientClear_c2">#6c56be</color>
+    <color name="gradientClear_c3">#a189f1</color>
+
+    <array name="gradientClear">
+        <item>@color/gradientClear_c1</item>
+        <item>@color/gradientClear_c2</item>
+        <item>@color/gradientClear_c3</item>
+    </array>
+
+    <array name="gradient1">
+        <item>@color/md_amber_600</item>
+        <item>@color/md_amber_400</item>
+        <item>@color/md_amber_200</item>
+    </array>
+
+    <array name="gradient2">
+        <item>@color/md_grey_800</item>
+        <item>@color/md_grey_600</item>
+        <item>@color/md_grey_300</item>
+    </array>
+
+    <array name="gradient3">
+        <item>@color/md_indigo_600</item>
+        <item>@color/md_indigo_400</item>
+        <item>@color/md_indigo_200</item>
+    </array>
+
+    <!--Player rating -->
+
+
+    <color name="text_enabled">#FFFFFFFF</color>
+    <color name="text_disabled">#4DFFFFFF</color>
+
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#FF63727B</color>
+
+
+    <!--Filter test-->
+    <color name="font_black_0">#212121</color>
+    <color name="font_black_1">#424242</color>
+    <color name="font_black_2">#616161</color>
+    <color name="font_black_3">#757575</color>
+    <color name="font_black_4">#9e9e9e</color>
+    <color name="font_black_5">#bdbdbd</color>
+    <color name="font_black_6">#e0e0e0</color>
+    <color name="half_transparent">#8f000000</color>
+
+
+    <!--DribbbleTarget-->
+    <color name="mid_grey">#40808080</color>
+    <color name="gif_badge_light_image">#40000000</color>
+    <color name="gif_badge_dark_image">#b3ffffff</color>
+</resources>

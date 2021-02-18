@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--HearyLayout-->
+
+    <integer name="heart_anim_bezier_factor">6</integer>
+    <integer name="anim_duration">4000</integer>
+
+    <!--HearyLayout-->
+
+    <!--HearyLayout2-->
+
+    <integer name="heart_anim_bezier_factor2">6</integer>
+    <integer name="anim_duration2">4000</integer>
+
+    <!--HearyLayout2-->
+
+</resources>

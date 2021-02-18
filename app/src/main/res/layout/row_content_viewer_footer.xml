@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_grey_50">
+
+    <Button
+        android:id="@+id/content_viewer_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="로그인하기"
+        android:elevation="1dp"
+        android:translationZ="2dp"
+        android:background="@color/md_grey_50"
+        android:shadowColor="@color/md_grey_300"
+        android:visibility="gone"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <LinearLayout
+        android:id="@+id/content_viewer_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_rectangle_border"
+        >
+        <!--android:background="@drawable/rounded_rectangle_border"-->
+
+
+        <!--android:focusable="false"-->
+        <EditText
+            android:id="@+id/comment_input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textCapSentences"
+            android:layout_marginStart="16dp"
+            android:background="@color/transparent"
+            android:hint="댓글을 입력해주세요..."
+            android:textColor="@color/md_blue_grey_700"
+            android:textSize="15sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_weight="1"
+            />
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+
+        <ImageButton
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            app:srcCompat="@drawable/ic_send"/>
+
+        <!--android:background="?android:attr/selectableItemBackgroundBorderless"-->
+
+    </LinearLayout>
+
+</FrameLayout>
+

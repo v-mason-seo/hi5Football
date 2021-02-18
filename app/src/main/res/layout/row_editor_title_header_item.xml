@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_grey_50"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="10sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/md_blue_grey_400"/>
+
+    <EditText
+        android:id="@+id/editor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect|textAutoComplete|textCapSentences"
+        android:hint="제목을 입력해주세요 ..."
+        android:background="@color/transparent"
+        android:singleLine="true"
+        android:textColor="@color/md_grey_600"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+</LinearLayout>

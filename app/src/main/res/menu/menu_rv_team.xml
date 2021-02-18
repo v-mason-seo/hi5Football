@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_request_change_name"
+        android:title="@string/menu_request_change_name" />
+
+    <item
+        android:id="@+id/menu_request_update_info"
+        android:title="@string/menu_request_update_info" />
+
+    <item
+        android:id="@+id/menu_team_post_content"
+        android:title="@string/menu_post_content" />
+
+</menu>

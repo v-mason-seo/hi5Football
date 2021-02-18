@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_grey_50"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:foreground="?android:selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingEnd="12dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/avatar_small_size"
+                    android:layout_height="@dimen/avatar_small_size"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    tools:src="@drawable/ic_face" />
+
+                <!--android:foreground="@drawable/avatar_small_ripple"-->
+
+                <TextView
+                    android:id="@+id/comment_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/md_blue_300"
+                    android:textSize="12sp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    tools:text="Username" />
+
+                <TextView
+                    android:id="@+id/tv_is_edit_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/md_blue_grey_200"
+                    android:textColor="@color/md_grey_100"
+                    android:textSize="12sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="수정됨"/>
+
+                <TextView
+                    android:id="@+id/tv_is_report_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/md_deep_purple_200"
+                    android:textColor="@color/md_grey_100"
+                    android:textSize="12sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="신고"/>
+
+                <TextView
+                    android:id="@+id/comment_reg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="11sp"
+                    android:layout_marginStart="16dp"
+                    tools:text="2 hours ago" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <!--<com.github.zagum.switchicon.SwitchIconView-->
+                    <!--android:id="@+id/comment_like"-->
+                    <!--android:layout_width="38dp"-->
+                    <!--android:layout_height="38dp"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                    <!--app:si_animation_duration="500"-->
+                    <!--app:si_disabled_alpha=".8"-->
+                    <!--app:si_disabled_color="@color/md_grey_800"-->
+                    <!--app:si_tint_color="@color/md_indigo_400"-->
+                    <!--app:si_enabled="false"-->
+                    <!--app:si_no_dash="true"-->
+                    <!--app:srcCompat="@drawable/ic_clap_color_vector"/>-->
+
+                <ImageView
+                    android:id="@+id/comment_like"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/ic_clap_color_vector"/>
+
+                <TextView
+                    android:id="@+id/comment_like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="12sp"
+                    tools:text="11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/post_recomment_arrow"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:srcCompat="@drawable/ic_recomment"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/comment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    tools:text="comment content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment_user_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btn_report_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:shadowColor="@color/md_grey_300"
+                    android:text="신고"
+                    android:minWidth="0dp"
+                    android:theme="@style/ReplayButton"/>
+
+                <Button
+                    android:id="@+id/btn_edit_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:shadowColor="@color/md_grey_300"
+                    android:text="수정"
+                    android:minWidth="0dp"
+                    android:theme="@style/ReplayButton"/>
+
+                <Button
+                    android:id="@+id/btn_delete_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:shadowColor="@color/md_grey_300"
+                    android:text="삭제"
+                    android:minWidth="0dp"
+                    android:theme="@style/ReplayButton"/>
+
+                <Button
+                    android:id="@+id/btn_reply_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:shadowColor="@color/md_grey_300"
+                    android:text="답글"
+                    android:textSize="13sp"
+                    android:minWidth="0dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

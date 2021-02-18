@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ddastudio.hifivefootball_android.match_arena.ArenaChatFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_arena_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:foreground="@drawable/arena_chat_recyclerview_foreground"
+            tools:listitem="@layout/fragment_item_list_dialog_item" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_arena_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/row_arena_image_item" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_attachment"/>
+
+        <EditText
+            android:id="@+id/et_chatbox"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Enter message"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_width="0dp"
+            android:textSize="13sp"
+            android:maxLines="6"/>
+
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:text="SEND"
+            android:textSize="14dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/iv_participation_users"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_group_grey_400_vector"/>
+
+            <TextView
+                android:id="@+id/tv_participation_user_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/md_grey_400"
+                tools:text="12"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

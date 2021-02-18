@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_player_avatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/ic_person_grey_vector"/>
+
+                <TextView
+                    android:id="@+id/tv_player_stat_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    tools:text="player_stat_info"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginStart="68dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_flag_goal"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_soccer_ball_vector2"
+                        android:visibility="gone"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/md_grey_300"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_flag_ycard"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/ic_yellow_card_vector"
+                        android:visibility="gone"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/md_grey_300"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_flag_rcard"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_red_card_vector"
+                        android:visibility="gone"
+                        android:layout_marginStart="4dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/md_grey_300"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_flag_in"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_substitution_in"
+                        android:layout_marginStart="4dp"
+                        android:visibility="gone"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/md_grey_300"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_flag_out"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_substitution_out"
+                        android:layout_marginStart="4dp"
+                        android:visibility="gone"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/md_grey_300"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                tools:text="PlayerName"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:textColor="@color/md_grey_100"
+                android:background="@color/md_grey_500"
+                android:text="0.0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_minus_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:theme="@style/RatingPlusMinusButton"
+                    android:text="-"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:min="0"
+                    android:layout_marginTop="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_plus_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:theme="@style/RatingPlusMinusButton"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="12dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textCapSentences"
+                    android:hint="선수평을 입력해주세요 ( 선택 )"
+                    android:textSize="13sp"
+                    android:paddingTop="12dp"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textColor="@color/md_grey_800"
+                    android:maxHeight="74dp"
+                    android:theme="@style/MyEditTextStyle2"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

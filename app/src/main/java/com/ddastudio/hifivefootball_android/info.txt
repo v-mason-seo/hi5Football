@@ -1,0 +1,58 @@
+//
+// [ViewModel]
+//
+public class UserProfileViewModel extends ViewModel {
+    private String userId;
+    private User user;
+
+    public void init(String userId) {
+        this.userId = userId;
+    }
+    public User getUser() {
+        return user;
+    }
+}
+
+
+/*
+ * 1. LifecycleFragment 상속을 받았다.
+      - 안정화가 되면  Android Support Library 내에서 LifecycleOwner를 구현할 예정
+ */
+public class UserProfileFragment extends LifecycleFragment {
+    private static final String UID_KEY = "uid";
+    private UserProfileViewModel viewModel;
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        String userId = getArguments().getString(UID_KEY);
+        viewModel = ViewModelProviders.of(this).get(UserProfileViewModel.class);
+        viewModel.init(userId);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.user_profile, container, false);
+    }
+}
+
+
+//
+// [LiveData]
+// 1.Lifecycle state 상태에 따라 동작하므로 memory leak 발생을 방지할 수 있다.
+//
+//
+public class UserProfileViewModel extends ViewModel {
+    ...
+    // private User user;
+    private LiveData<User> user;
+
+    // public User getUser() {
+    //     return user;
+    // }
+
+    public LiveData<User> getUser() {
+        return user;
+    }
+}

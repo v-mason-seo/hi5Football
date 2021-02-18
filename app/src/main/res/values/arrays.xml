@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="insert_video_link_array">
+        <item>URL</item>
+        <item>소스코드</item>
+    </string-array>
+
+    <string-array name="pref_limits_count_titles">
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="pref_limits_count_values">
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="pref_board_titles">
+        <item>전체</item>
+        <item>해외</item>
+        <item>국내</item>
+        <item>일반</item>
+        <item>클럽</item>
+        <item>플레이어</item>
+    </string-array>
+
+    <string-array name="pref_board_values">
+        <item>0</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+    </string-array>
+
+</resources>

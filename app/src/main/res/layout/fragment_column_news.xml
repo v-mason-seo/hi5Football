@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ddastudio.hifivefootball_android.content_column_news.ColumnNewsFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ddastudio.hifivefootball_android.ui.widget.CustomRecyclerView
+            android:id="@+id/humor_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="12dp"
+        android:layout_gravity="bottom|left"
+        android:alpha="0.8"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_arrow_upward"
+        app:fabSize="mini"
+        app:backgroundTint="@color/md_grey_50" />
+
+</FrameLayout>

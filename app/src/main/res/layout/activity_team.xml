@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ddastudio.hifivefootball_android.competition.CompetitionActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/team_emblem"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        tools:src="@drawable/ic_empty_emblem_vector_1"/>
+
+                    <TextView
+                        android:id="@+id/team_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Team Name"/>
+
+                    <View
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/team_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clipToPadding="false"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                app:stl_defaultTabTextColor="@color/md_grey_800"
+                app:stl_defaultTabTextHorizontalPadding="24dp"
+                app:stl_indicatorColor="@color/md_green_500"
+                app:stl_dividerThickness="0dp"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="3dp"
+                app:stl_underlineThickness="1dp"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/team_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_post_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="end|bottom"
+            app:srcCompat="@drawable/ic_create"
+            android:tint="@color/md_grey_700"
+            app:fabSize="normal"
+            app:backgroundTint="@color/md_grey_50"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

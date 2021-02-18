@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ddastudio.hifivefootball_android.player_rating.PlayerRatingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ddastudio.hifivefootball_android.ui.widget.ForecastView
+            android:id="@+id/forecast_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@android:color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        style="@style/ClickableImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_arrow_back_vector"
+        android:tint="@android:color/white" />
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/forecast_city_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/player_rating_complete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="4dp"
+        android:text="저장"
+        android:elevation="1dp"
+        android:translationZ="2dp"
+        android:background="@color/md_light_green_50"
+        android:textColor="@color/md_grey_700"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+</FrameLayout>

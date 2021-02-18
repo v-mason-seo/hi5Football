@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#77FFFFFF"
+    tools:context="com.ddastudio.hifivefootball_android.auth.SignupActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/signup_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/md_grey_100"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/signup_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_grey_900"
+                android:textSize="20sp"
+                android:text="회원가입"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/avatar_xlarge_size"
+                    android:layout_height="@dimen/avatar_xlarge_size"
+                    android:contentDescription="아바타"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:src="@drawable/ic_face"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="11sp"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginBottom="8dp"
+                    android:text="이미지를 클릭해서 프로필 사진을 변경하세요"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/email_text_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/md_grey_500">
+
+                    <EditText
+                        android:id="@+id/user_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_grey_600"
+                        android:gravity="start"
+                        android:backgroundTint="@color/md_grey_400"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:hint="이메일"
+                        android:enabled="false"
+                        android:focusable="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/check_email_button"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/rounded_rectangle_amber"
+                    android:textSize="11sp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:text="확인"/>
+
+            </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/username_text_input_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/md_grey_500">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/md_grey_600"
+                            android:gravity="start"
+                            android:backgroundTint="@color/md_grey_400"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="14sp"
+                            android:singleLine="true"
+                            android:hint="사용자ID (영문 또는 숫자)"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/check_username_button"
+                        android:layout_width="78dp"
+                        android:layout_height="42dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:text="중복확인"
+                        android:theme="@style/Grey50Button"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/nickname_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/md_grey_500">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:gravity="start"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:hint="닉네임을 입력해주세요"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/profile_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/md_grey_500">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tv_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:gravity="start"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:hint="프로필을 입력해주세요 (선택)"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/md_grey_500"
+                    android:visibility="gone"
+                    android:text="관심있는 팀"/>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/fbx_team_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editor_list"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="12dp"
+                    android:visibility="gone"
+                    app:alignContent="space_around"
+                    app:alignItems="flex_start"
+                    app:dividerDrawable="@drawable/div"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/md_grey_500"
+                    android:text="관심있는 선수"
+                    android:visibility="gone"/>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/fbx_player_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editor_list"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="12dp"
+                    android:visibility="gone"
+                    app:alignContent="space_around"
+                    app:alignItems="flex_start"
+                    app:dividerDrawable="@drawable/div"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/check_terms_contditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이용약관 동의"/>
+
+                    <Button
+                        android:id="@+id/show_terms_conditions"
+                        android:layout_width="58dp"
+                        android:layout_height="42dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:text="보기"
+                        android:theme="@style/Grey50Button"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signup_button"
+                    android:layout_gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_drawable"
+                    android:textColor="@color/md_grey_100"
+                    android:textSize="14sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/sign_up"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/signup_loading"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="18dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"
+            android:clipChildren="false"
+            app:lottie_fileName="clap.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="false" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

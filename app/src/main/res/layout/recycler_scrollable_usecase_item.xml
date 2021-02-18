@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/md_blue_grey_700"
+    android:paddingBottom="@dimen/margin_bottom"
+    android:paddingTop="@dimen/margin_top">
+
+    <FrameLayout
+        android:id="@+id/image_util_container"
+        android:layout_width="@dimen/icon_touchable_component_mini"
+        android:layout_height="@dimen/icon_touchable_component_mini"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginEnd="@dimen/margin_right">
+
+        <ImageView
+            android:id="@+id/dismiss_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_mini_oval"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:tint="@color/md_blue_grey_800"
+            app:srcCompat="@drawable/ic_cancel"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_toLeftOf="@id/image_util_container"
+        android:layout_toStartOf="@id/image_util_container"
+        android:orientation="vertical"
+        tools:background="@color/md_blue_grey_300">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:text="@string/issue_header_title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/md_grey_200" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/md_grey_400"
+            android:textSize="12sp"
+            tools:text="@string/issue_header_description"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

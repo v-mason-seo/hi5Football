@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:foreground="?android:selectableItemBackground">
+
+    <TextView
+        android:id="@+id/hometeam_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:textColor="@color/md_grey_700"
+        tools:text="hometeam"/>
+
+    <ImageView
+        android:id="@+id/hometeam_image"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="?android:selectableItemBackground"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/match_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_blue_grey_50"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:text="오전 3:45"/>
+
+            <TextView
+                android:id="@+id/match_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="3 : 2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_team_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    tools:text="3"/>
+
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/md_grey_200"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_marginBottom="4dp"-->
+                    <!--android:layout_marginStart="12dp"-->
+                    <!--android:layout_marginEnd="12dp"/>-->
+
+                <android.support.v4.widget.Space
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/away_team_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    tools:text="2"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_match_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:visibility="visible"
+            tools:text="5601 / 123472"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/awayteam_image"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/awayteam_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/md_grey_700"
+        tools:text="awayteam"/>
+
+</LinearLayout>

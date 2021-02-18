@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    >
+
+    <android.support.v4.widget.Space
+        android:id="@+id/center_anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/custom_tab_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/center_anchor"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:tint="@color/tab_custom_icon_selector"
+        app:srcCompat = "@drawable/ic_filter_list_vector"
+        />
+
+    <!--android:src="@drawable/custom_icon"-->
+    <!--app:tint="@drawable/bg_custom_tab"-->
+
+    <TextView
+        android:id="@+id/custom_tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_anchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:textColor="@drawable/bg_custom_tab"
+        android:text="AAA"
+        android:textSize="10sp"
+        />
+
+</RelativeLayout>

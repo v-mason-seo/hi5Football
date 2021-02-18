@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbx_match_tag_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editor_list"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:alignContent="space_around"
+        app:alignItems="flex_start"
+        app:dividerDrawable="@drawable/div"
+        app:flexWrap="wrap"
+        app:showDivider="middle"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbx_tag_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editor_list"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:alignContent="space_around"
+        app:alignItems="flex_start"
+        app:dividerDrawable="@drawable/div"
+        app:flexWrap="wrap"
+        app:showDivider="middle"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/issue_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_800"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/issue_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:titleTextColor="@color/md_blue_grey_800"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <!--android:id="@+id/main_tabs"-->
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/issue_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_normal_height"
+            app:stl_customTabTextLayoutId="@layout/tab_custom_textview"
+            app:stl_customTabTextViewId="@+id/custom_text"
+            app:stl_indicatorColor="@color/md_teal_200"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_distributeEvenly="true"
+            app:stl_indicatorCornerRadius="1.5dp"
+            app:stl_indicatorThickness="3dp"
+            app:stl_underlineColor="@color/transparent"
+            app:stl_dividerThickness="0dp"
+            app:stl_underlineThickness="1dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/issue_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_post_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/ic_create"
+        android:layout_gravity="bottom|right"
+        android:alpha="0.8"
+        app:fabSize="normal"
+        app:backgroundTint="@color/md_teal_100"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

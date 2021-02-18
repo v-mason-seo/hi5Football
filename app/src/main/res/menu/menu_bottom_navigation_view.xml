@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_content"
+        android:title="커뮤니티"
+        android:icon="@drawable/ic_list_black_vector"/>
+
+    <item
+        android:id="@+id/action_matchup"
+        android:title="매치업"
+        android:icon="@drawable/ic_football_goal_post_vector"/>
+
+    <item
+        android:id="@+id/action_data_center"
+        android:title="데이터센터"
+        android:icon="@drawable/ic_football_shoe_vector"/>
+
+    <item
+        android:id="@+id/action_my_news"
+        android:title="내소식"
+        android:icon="@drawable/ic_notifications"/>
+
+</menu>

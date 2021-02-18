@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_match_report_rating_order"
+        android:title="@string/menu_match_report_rating_order" />
+
+    <item
+        android:id="@+id/menu_match_report_team_order"
+        android:title="@string/menu_match_report_team_order" />
+
+    <item
+        android:id="@+id/menu_match_report_player_name_order"
+        android:title="@string/menu_match_report_player_name_order" />
+
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--스페이스로 명령어를 구분하지 않은것은 파일명에 스페이스가 들어가는 경우 파일을 찾지 못하기 때문이다.-->
+    <!--그래서 명령어를 @ 로 구분하였다.-->
+
+    <!--gif을 mp4로 변환하기 위한 ffmpeg 명령어-->
+    <string name="ffmpeg_cmd_convert_gif_to_mp4" translatable="false">
+        -f@gif@-i@%1$s@-pix_fmt@yuv420p@-c:v@libx264@-movflags@+faststart@-filter:v@crop=\'floor(in_w/2)*2:floor(in_h/2)*2\'@%2$s
+    </string>
+
+    <!--webm을 mp4로 변환하기 위한 ffmpeg 명령어-->
+    <string name="ffmpeg_cmd_convert_webm_to_mp4" translatable="false">
+        -f@webm@-i@%1$s@-pix_fmt@yuv420p@-c:v@libx264@-movflags@+faststart@-filter:v@crop=\'floor(in_w/2)*2:floor(in_h/2)*2\'@%2$s
+    </string>
+
+    <!--gif을 mp4로 변환하기 위한 ffmpeg 명령어-->
+    <!--<string name="ffmpeg_cmd_convert_gif_to_mp4" translatable="false">-->
+    <!-- -f gif -i %1$s -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop=\'floor(in_w/2)*2:floor(in_h/2)*2\' %2$s-->
+    <!--</string>-->
+    <!--webm을 mp4로 변환하기 위한 ffmpeg 명령어-->
+    <!--<string name="ffmpeg_cmd_convert_webm_to_mp4" translatable="false">-->
+    <!-- -f webm -i %1$s -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop=\'floor(in_w/2)*2:floor(in_h/2)*2\' %2$s-->
+    <!--</string>-->
+
+</resources>

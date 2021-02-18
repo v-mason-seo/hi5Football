@@ -1,0 +1,568 @@
+<resources>
+    <string name="app_name">하이파이브풋볼</string>
+    <string name="no_items">데이터가 없습니다.\n즐거운 하루되세요.</string>
+    <string name="no_schedule_items">경기일정이 없습니다.\n즐거운 하루되세요.</string>
+    <string name="no_best_content">베스트글이 없습니다.\n즐거운 하루되세요.</string>
+    <string name="no_more_load_retry">No more items to load. Refresh to retry.</string>
+    <string name="endless_disabled">No more items to load (max reached).</string>
+    <string name="endless_cancel">Cancelled by the user.</string>
+    <string name="endless_error">An error occurred while loading more items.</string>
+
+    <!--액티비티 타이틀-->
+    <string name="activity_title_login">로그인</string>
+    <string name="activity_title_signup">회원가입</string>
+    <string name="activity_title_settings">설정</string>
+    <string name="activity_title_editor_post">신규작성</string>
+    <string name="activity_title_editor_modify">수정</string>
+
+
+    <string name="bottomnav_title_0">게시판</string>
+    <string name="bottomnav_title_1">일정</string>
+    <string name="bottomnav_title_2">채팅</string>
+    <string name="bottomnav_title_3">요약</string>
+    <string name="bottomnav_title_4">내소식</string>
+
+
+    <!--메뉴-->
+    <string name="action_scrap">스크랩</string>
+    <string name="menu_login">로그인</string>
+    <string name="menu_search">검색</string>
+    <string name="menu_done">완료</string>
+    <string name="menu_submit">글올리기</string>
+    <string name="menu_report">신고하기</string>
+    <string name="menu_delete">삭제하기</string>
+    <string name="menu_edit">수정하기</string>
+
+    <string name="menu_filter">필터</string>
+    <string name="menu_sort">정렬</string>
+    <string name="menu_view_type">보기</string>
+    <string name="menu_view_type_basic">기본</string>
+    <string name="menu_view_type_grid">그리드</string>
+    <string name="menu_view_type_list">리스트</string>
+
+    <string name="menu_open_report_content">신고하기</string>
+    <string name="menu_show_content_id">게시글ID 확인</string>
+
+    <string name="menu_request_change_name">이름변경</string>
+    <string name="menu_request_update_info">정보 업데이트</string>
+    <string name="menu_post_content">글쓰기</string>
+
+    <string name="menu_open_match_activity">매치 상세정보</string>
+    <string name="menu_open_match_chat_activity">매치 대화방</string>
+    <string name="menu_show_league_table">순위보기</string>
+    <string name="menu_show_match_id">매치아이디 확인</string>
+
+    <string name="menu_match_report_rating_order">평점 정렬(기본)</string>
+    <string name="menu_match_report_team_order">팀 정렬</string>
+    <string name="menu_match_report_player_name_order">선수이름 정렬</string>
+
+
+    <string name="menu_exclude_arena_chat">매치토크 감추기</string>
+    <string name="menu_exclude_player_comment">매치리포트 감추기</string>
+    <string name="menu_exclude_football_news">축구소식 감추기</string>
+
+    <!--dialog-->
+    <string name="title_change_player_name">선수이름 변경 요청</string>
+    <string name="title_change_team_name">팀이름 변경 요청</string>
+    <string name="positive">확인</string>
+    <string name="negative">취소</string>
+
+    <!--네비게이션 드로워-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="nav_menu_board_all">전체</string>
+    <string name="nav_menu_board_football">축구</string>
+    <string name="nav_menu_board_scout">선수스카우트</string>
+    <string name="nav_menu_board_match_talk">매치토크</string>
+    <string name="nav_menu_board_football_news">축구소식</string>
+    <string name="nav_menu_board_general">자유게시판</string>
+    <string name="nav_menu_board_column">칼럼</string>
+    <string name="nav_menu_board_humor">눈팅베스트</string>
+    <string name="nav_menu_board_instruction">설명서</string>
+    <string name="nav_menu_board_club">클럽</string>
+    <string name="nav_menu_board_player">플레이어</string>
+    <string name="nav_menu_board_match_report">매치리포트</string>
+    <string name="nav_menu_board_issue">건의 / 개선</string>
+    <string name="nav_menu_board_report">신고</string>
+    <string name="nav_menu_board_notification">공지</string>
+    <string name="nav_menu_setting">설정</string>
+    <string name="nav_logout">로그아웃</string>
+
+    <!--에디터-->
+    <string name="title_hint">( 제목을 입력하세요 )</string>
+
+    <!--에디터(이미지 삽입)-->
+    <string name="insert_image_title">이미지 삽입 종류</string>
+    <string-array name="insert_image_array">
+        <item>로컬이미지</item>
+        <item>링크이미지</item>
+    </string-array>
+
+
+    <!--로그인관련-->
+    <string name="is_not_authorized_info">로그인 후 가능합니다.</string>
+    <string name="complete_load_user_info">사용자 정보를 가져왔습니다</string>
+    <string name="fail_load_user_info">사용자 정보를 읽기 실패</string>
+    <string name="expire_token_info">토큰이 만료되었습니다.\n로그인을 다시해주세요.</string>
+
+    <!--댓글-->
+    <string name="deleted_comment_info">삭제된 댓글입니다.</string>
+
+    <!--게시글-->
+    <string name="delete_content_success">삭제 되었습니다</string>
+    <string name="delete_content_fail">삭제중 오류가 발생했습니다</string>
+
+    <!--게시판 종류-->
+    <integer-array name="board_id">
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+    </integer-array>
+
+    <string-array name="board_name">
+        <item>해외</item>
+        <item>국내</item>
+        <item>일반</item>
+        <item>클럽</item>
+        <item>플레이어</item>
+        <item>건의/개선</item>
+    </string-array>
+
+    <string-array name="issue_platform_name">
+        <item>Common</item>
+        <item>Android</item>
+        <item>iOs</item>
+        <item>Web</item>
+    </string-array>
+
+    <!-- Main viewpager tabs -->
+    <string-array name="main_tabs_array">
+        <item>커뮤니티</item>
+        <item>매치업</item>
+        <item>데이터센터</item>
+        <item>내소식</item>
+    </string-array>
+
+    <!--매치 탭-->
+    <string-array name="match_tabs_array">
+        <item>관련글</item>
+        <item>기본정보</item>
+        <item>라인업</item>
+        <item>선수평</item>
+        <item>순위</item>
+        <item>타임라인</item>
+    </string-array>
+
+    <string-array name="player_tabs_array">
+        <item>관련글</item>
+        <item>정보</item>
+        <item>기록</item>
+        <!--<item>뉴스</item>-->
+        <!--<item>컬럼</item>-->
+    </string-array>
+
+    <string-array name="team_tabs_array">
+        <item>관련글</item>
+        <item>정보</item>
+        <item>일정</item>
+        <item>선수</item>
+        <item>기록</item>
+        <!--<item>순위</item>-->
+    </string-array>
+
+    <string-array name="nunting_tabs_array">
+        <item>사이트</item>
+        <item>게시판</item>
+    </string-array>
+
+    <!--Competition 탭-->
+    <string-array name="comp_tabs_array">
+        <item>Match</item>
+        <item>Standing</item>
+    </string-array>
+
+    <string-array name="admin_tabs_array">
+        <item>Competition</item>
+    </string-array>
+
+
+    <!--ContentListContainerFragment, ContentListContainerVpAdapter에서 사용함-->
+    <string-array name="content_list_container_tabs_array">
+        <item>리스트</item>
+        <item>게시글</item>
+    </string-array>
+
+    <string-array name="match_up_container_tabs_array">
+        <item>종료된 인기 매치</item>
+        <item>라이브 매치</item>
+        <item>다가오는 인기 매치</item>
+        <!--<item>최근 끝난 매치</item>-->
+        <!--<item>라이브 매치</item>-->
+        <!--<item>곧 다가오는 매치</item>-->
+        <!--<item>인기 매치</item>-->
+    </string-array>
+
+    <!--에디터 탭-->
+    <string-array name="posts_editor_tabs_array">
+        <item>HTML</item>
+        <item>일반</item>
+        <!--<item>마크다운</item>-->
+        <!--<item>미리보기</item>-->
+    </string-array>
+
+    <!--사용자 프로필-->
+    <string name="dialog_edit_profile_title">사용자 프로필 변경</string>
+
+    <string-array name="user_profile_tabs_array">
+        <item>글</item>
+        <item>댓글</item>
+        <item>좋아요</item>
+        <item>스크랩</item>
+    </string-array>
+
+    <string-array name="issue_tabs_array">
+        <item>Open</item>
+        <item>Close</item>
+    </string-array>
+
+    <string-array name="arena_tabs_array">
+        <item>채팅</item>
+        <item>라인업</item>
+        <!--<item>라인업</item>-->
+    </string-array>
+
+    <string-array name="notification_tabs_array">
+        <item>새알람</item>
+        <item>읽은 알람</item>
+    </string-array>
+
+    <!--광고-->
+    <!--<string name="admob_bottom_banner_id">ca-app-pub-6608605689570528/1960012539</string>-->
+    <!--<string name="admob_content_bottom_banner_id">ca-app-pub-6608605689570528/2716724261</string>-->
+    <!--<string name="admob_user_profile_bottom_banner_id">ca-app-pub-6608605689570528/1806212671</string>-->
+    <!--<string name="admob_team_bottom_banner_id">ca-app-pub-6608605689570528/1502238539</string>-->
+    <!--<string name="admob_player_bottom_banner_id">ca-app-pub-6608605689570528/7799343138</string>-->
+    <!--<string name="admob_match_bottom_banner_id">ca-app-pub-6608605689570528/3269071188</string>-->
+    <!--<string name="admob_competition_bottom_banner_id">ca-app-pub-6608605689570528/7228497491</string>-->
+    <!--<string name="admob_basic_bottom_banner_id">ca-app-pub-6608605689570528/3592030425</string>-->
+    <!--<string name="admob_match_detail_info_bottom_banner_id">ca-app-pub-6608605689570528/8327915967</string>-->
+    <!--<string name="admob_player_list_bottom_banner_id">ca-app-pub-6608605689570528/8884268368</string>-->
+    <!--<string name="admob_team_list_bottom_banner_id">ca-app-pub-6608605689570528/1450261787</string>-->
+    <!--<string name="admob_player_rating_bottom_banner_id">ca-app-pub-6608605689570528/3144743523</string>-->
+    <!--<string name="admob_arena_bottom_banner_id">ca-app-pub-6608605689570528/5898089246</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Settings -->
+    <string name="pref_title_auto_login">자동 로그인</string>
+    <string name="pref_title_push_message">푸시 메시지</string>
+    <string name="pref_description_push_message">내가 등록한 글에 댓글, 공감, 신고와 같은 이벤트가 발생하면 푸시 메시지로 알림을 받을 수 있습니다.</string>
+    <string name="pref_title_limits_count">데이터 조회시 가져올 항목 개수</string>
+    <string name="pref_first_board">기본 게시판 선택</string>
+
+    <!--회원가입-->
+    <string name="sign_up">회원가입</string>
+
+
+    <!--네이버 로그인-->
+    <string name="naver_client_name">하이파이브싸커</string>
+
+    <!--카카오 로그인-->
+    <string name="kakao_app_key">c33e931ae4fbe573af68f73a94bfec0f</string>
+
+    <!--권한-->
+    <string name="permission_request_denied">권한 요청을 거부하였습니다</string>
+
+    <string name="html" translatable="false">
+        <![CDATA[
+        <html>
+            <head>
+            <meta name=\viewport\tcontent=\width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi\ />
+                <style type="text/css">
+                    body {
+                        font-size: %4$fpx;
+                        line-height: %6$f;
+                        color: #%2$s;
+                        background-color: #%7$s;
+                        margin: %5$fpx %5$fpx %5$fpx %5$fpx;
+                    }
+                    a {color: #%3$s;}
+                    img {display: inline; height: auto; max-width: 100%%;}
+                    pre {white-space: pre-wrap;}
+                    iframe {width: 90vw; height: 50.625vw;} /* 16:9 */
+                    video {display: inline; height: auto; max-width: 100%%;}
+                </style>
+
+                <style>
+                    a:link    { text-decoration: none; color:#2c3e50}
+                    a:visited {  text-decoration: none; color: #2c3e50}
+                    a:active  {  text-decoration: none; color: #2c3e50}
+                    h6 { color:green;}
+                    .link {
+                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                        transition: 0.3s;
+                    }
+                    .container {
+                        padding: 2px 16px;
+                    }
+                </style>
+
+            </head>
+            <body>%1$s</body>
+            </html>"
+        ]]>
+    </string>
+
+    <string name="card_html" translatable="false">
+        <![CDATA[
+            <div class="link">
+                <a href="%1$s">
+                    <img src="%2$s">
+                    <div class="container">
+                      <h5><b>%3$s</b></h5>
+                      <h6>%4$s</<h6>
+                      <p>
+                    </div>
+                </a>
+            </div>
+        ]]>
+    </string>
+
+    <string name="video_html" translatable="false">
+        <![CDATA[
+            <div class=mv><p>
+                <video controls autoplay %1$s
+                src ="%2$s">
+                </div><br><br>
+                <div class=mv><p>
+        ]]>
+    </string>
+
+    <string name="img_src" translatable="false">
+        <![CDATA[
+            <img src="%1$s">
+        ]]>
+    </string>
+
+    <string name="terms_and_conditions_of_user">
+        제 1 장 총 칙\n\n\n
+
+        제 1 조 (목적)\n\n
+        이 약관은 하이파이브풋볼(이하 "사이트"라 합니다)에서 제공하는 인터넷서비스(이하 "서비스"라 합니다)의 이용 조건 및 절차에 관한 기본적인 사항을 규정함을 목적으로 합니다.\n\n
+
+        제 2 조 (약관의 효력 및 변경)\n\n
+        ① 이 약관은 서비스 화면이나 기타의 방법으로 이용고객에게 공지함으로써 효력을 발생합니다.\n
+        ② 사이트는 이 약관의 내용을 변경할 수 있으며, 변경된 약관은 제1항과 같은 방법으로 공지 또는 통지함으로써 효력을 발생합니다.\n\n
+
+        제 3 조 (용어의 정의)\n\n
+        이 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        ① 회원 : 사이트와 서비스 이용계약을 체결하거나 이용자 아이디(ID)를 부여받은 개인 또는 단체를 말합니다.\n
+        ② 신청자 : 회원가입을 신청하는 개인 또는 단체를 말합니다.\n
+        ③ 아이디(ID) : 회원의 식별과 서비스 이용을 위하여 회원이 정하고 사이트가 승인하는 문자와 숫자의 조합을 말합니다.\n
+        ④ 비밀번호 : 회원이 부여 받은 아이디(ID)와 일치된 회원임을 확인하고, 회원 자신의 비밀을 보호하기 위하여 회원이 정한 문자와 숫자의 조합을 말합니다.\n
+        ⑤ 해지 : 사이트 또는 회원이 서비스 이용계약을 취소하는 것을 말합니다.\n\n
+
+        제 2 장 서비스 이용계약\n\n\n
+
+        제 4 조 (이용계약의 성립)\n\n
+        ① 이용약관 하단의 동의 버튼을 누르면 이 약관에 동의하는 것으로 간주됩니다.\n
+        ② 이용계약은 서비스 이용희망자의 이용약관 동의 후 이용 신청에 대하여 사이트가 승낙함으로써 성립합니다.\n\n
+
+        제 5 조 (이용신청)\n\n
+        ① 신청자가 본 서비스를 이용하기 위해서는 사이트 소정의 가입신청 양식에서 요구하는 이용자 정보를 기록하여 제출해야 합니다.\n
+        ② 가입신청 양식에 기재하는 모든 이용자 정보는 모두 실제 데이터인 것으로 간주됩니다. 실명이나 실제 정보를 입력하지 않은 사용자는 법적인 보호를 받을 수 없으며, 서비스의 제한을 받을 수 있습니다.\n\n
+
+        제 6 조 (이용신청의 승낙)\n\n
+        ① 사이트는 신청자에 대하여 제2항, 제3항의 경우를 예외로 하여 서비스 이용신청을 승낙합니다.\n
+        ② 사이트는 다음에 해당하는 경우에 그 신청에 대한 승낙 제한사유가 해소될 때까지 승낙을 유보할 수 있습니다.\n
+        가. 서비스 관련 설비에 여유가 없는 경우\n
+        나. 기술상 지장이 있는 경우\n
+        다. 기타 사이트가 필요하다고 인정되는 경우\n
+        ③ 사이트는 신청자가 다음에 해당하는 경우에는 승낙을 거부할 수 있습니다.\n
+        가. 다른 개인(사이트)의 명의를 사용하여 신청한 경우\n
+        나. 이용자 정보를 허위로 기재하여 신청한 경우\n
+        다. 사회의 안녕질서 또는 미풍양속을 저해할 목적으로 신청한 경우\n
+        라. 기타 사이트 소정의 이용신청요건을 충족하지 못하는 경우\n\n
+
+        제 7 조 (이용자정보의 변경)\n\n
+        회원은 이용 신청시에 기재했던 회원정보가 변경되었을 경우에는, 온라인으로 수정하여야 하며 변경하지 않음으로 인하여 발생되는 모든 문제의 책임은 회원에게 있습니다.\n\n
+
+        제 3 장 계약 당사자의 의무\n\n\n
+
+        제 8 조 (사이트의 의무)\n\n
+        ① 사이트는 회원에게 각 호의 서비스를 제공합니다.\n
+        가. 신규서비스와 도메인 정보에 대한 뉴스레터 발송\n
+        나. 추가 도메인 등록시 개인정보 자동 입력\n
+        다. 도메인 등록, 관리를 위한 각종 부가서비스\n
+        ② 사이트는 서비스 제공과 관련하여 취득한 회원의 개인정보를 회원의 동의없이 타인에게 누설, 공개 또는 배포할 수 없으며, 서비스관련 업무 이외의 상업적 목적으로 사용할 수 없습니다. 단, 다음 각 호의 1에 해당하는 경우는 예외입니다.\n
+        가. 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우\n
+        나. 범죄에 대한 수사상의 목적이 있거나 정보통신윤리 위원회의 요청이 있는 경우\n
+        다. 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우\n
+        ③ 사이트는 이 약관에서 정한 바에 따라 지속적, 안정적으로 서비스를 제공할 의무가 있습니다.\n\n
+
+        제 9 조 (회원의 의무)\n\n
+        ① 회원은 서비스 이용 시 다음 각 호의 행위를 하지 않아야 합니다.\n
+        가. 다른 회원의 ID를 부정하게 사용하는 행위\n
+        나. 서비스에서 얻은 정보를 사이트의 사전승낙 없이 회원의 이용 이외의 목적으로 복제하거나 이를 변경, 출판 및 방송 등에 사용하거나 타인에게 제공하는 행위\n
+        다. 사이트의 저작권, 타인의 저작권 등 기타 권리를 침해하는 행위\n
+        라. 공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형 등을 타인에게 유포하는 행위\n
+        마. 범죄와 결부된다고 객관적으로 판단되는 행위\n
+        바. 기타 관계법령에 위배되는 행위\n
+        ② 회원은 관계법령, 이 약관에서 규정하는 사항, 서비스 이용 안내 및 주의 사항을 준수하여야 합니다.\n
+        ③ 회원은 내용별로 사이트가 서비스 공지사항에 게시하거나 별도로 공지한 이용 제한 사항을 준수하여야 합니다.\n\n
+
+        제 4 장 서비스 제공 및 이용\n\n\n
+
+        제 10 조 (회원 아이디(ID)와 비밀번호 관리에 대한 회원의 의무)\n
+        ① 아이디(ID)와 비밀번호에 대한 모든 관리는 회원에게 책임이 있습니다. 회원에게 부여된 아이디(ID)와 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 전적인 책임은 회원에게 있습니다.\n
+        ② 자신의 아이디(ID)가 부정하게 사용된 경우 또는 기타 보안 위반에 대하여, 회원은 반드시 사이트에 그 사실을 통보해야 합니다.\n\n
+
+        제 11 조 (서비스 제한 및 정지)\n\n
+        ① 사이트는 전시, 사변, 천재지변 또는 이에 준하는 국가비상사태가 발생하거나 발생할 우려가 있는 경우와 전기통신사업법에 의한 기간통신 사업자가 전기통신서비스를 중지하는 등 기타 불가항력적 사유가 있는 경우에는 서비스의 전부 또는 일부를 제한하거나 정지할 수 있습니다.\n
+        ② 사이트는 제1항의 규정에 의하여 서비스의 이용을 제한하거나 정지할 때에는 그 사유 및 제한기간 등을 지체없이 회원에게 알려야 합니다.\n\n
+
+        제5장 계약사항의 변경, 해지\n\n\n
+
+        제 12 조 (정보의 변경)\n\n
+        회원이 주소, 비밀번호 등 고객정보를 변경하고자 하는 경우에는 홈페이지의 회원정보 변경 서비스를 이용하여 변경할 수 있습니다.\n\n
+
+        제 13 조 (계약사항의 해지)\n\n
+        회원은 서비스 이용계약을 해지할 수 있으며, 해지할 경우에는 본인이 직접 서비스를 통하거나 전화 또는 온라인 등으로 사이트에 해지신청을 하여야 합니다. 사이트는 해지신청이 접수된 당일부터 해당 회원의 서비스 이용을 제한합니다. 사이트는 회원이 다음 각 항의 1에 해당하여 이용계약을 해지하고자 할 경우에는 해지조치 7일전까지 그 뜻을 이용고객에게 통지하여 소명할 기회를 주어야 합니다.\n
+        ① 이용고객이 이용제한 규정을 위반하거나 그 이용제한 기간 내에 제한 사유를 해소하지 않는 경우\n
+        ② 정보통신윤리위원회가 이용해지를 요구한 경우\n
+        ③ 이용고객이 정당한 사유 없이 의견진술에 응하지 아니한 경우\n
+        ④ 타인 명의로 신청을 하였거나 신청서 내용의 허위 기재 또는 허위서류를 첨부하여 이용계약을 체결한 경우\n
+        사이트는 상기 규정에 의하여 해지된 이용고객에 대해서는 별도로 정한 기간동안 가입을 제한할 수 있습니다.\n\n
+
+        제6장 손해배상\n\n\n
+
+        제 14 조 (면책조항)\n\n
+        ① 사이트는 회원이 서비스 제공으로부터 기대되는 이익을 얻지 못하였거나 서비스 자료에 대한 취사선택 또는 이용으로 발생하는 손해 등에 대해서는 책임이 면제됩니다.\n
+        ② 사이트는 회원의 귀책사유나 제3자의 고의로 인하여 서비스에 장애가 발생하거나 회원의 데이터가 훼손된 경우에 책임이 면제됩니다.\n
+        ③ 사이트는 회원이 게시 또는 전송한 자료의 내용에 대해서는 책임이 면제됩니다.\n
+        ④ 상표권이 있는 도메인의 경우, 이로 인해 발생할 수도 있는 손해나 배상에 대한 책임은 구매한 회원 당사자에게 있으며, 사이트는 이에 대한 일체의 책임을 지지 않습니다.\n\n
+
+        제 15 조 (관할법원)\n\n
+        서비스와 관련하여 사이트와 회원간에 분쟁이 발생할 경우 사이트의 본사 소재지를 관할하는 법원을 관할법원으로 합니다.\n\n
+    </string>
+
+    <!--기타-->
+    <string name="download_success_image">이미지를 저장하였습니다.</string>
+    <string name="download_fail_image">이미지 저장에 실패했습니다.</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="issue_header_title">여러분의 다양한 의견을 보내주세요</string>
+    <string name="issue_header_description">앱을 이용하시면서 오류, 기능추가, 새로운 아이디어와 같은 당양한 의견을 보내주세요. 최대한 빨리 피브백을 드리고 앱에 반영할 수 있도록 하겠습니다.</string>
+
+    <string name="notification_header_title">로그인</string>
+    <string name="notification_header_description">로그인을 아직 하지 않았다면 로그인을 해주세요.</string>
+
+    <string name="overall_use_case_description"><![CDATA[The demoApp is organized in <b>fragments</b> where the <i>RecyclerView</i> and the <i>Adapter</i> are reinitialized.
+	<br>Each example implements several features of the library. Common listeners are instead implemented in the <i>MainActivity</i>.]]></string>
+
+    <string name="loading">불러오는중...</string>
+    <string name="load_failed">불러오기 실패</string>
+    <string name="load_end">완료</string>
+
+
+    <!--Player rating -->
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+    <string name="title_activity_terms_conditions">TermsConditionsActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+
+    <string name="push_test_message">푸시테스트 타이틀 메시지(테스트)</string>
+
+</resources>

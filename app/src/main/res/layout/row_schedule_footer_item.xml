@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:paddingBottom="16dp"
+    android:background="@color/md_blue_grey_50">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:background="@color/md_blue_grey_50"
+        android:layout_weight="1"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/md_grey_100"
+        android:gravity="right">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/league_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="1dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="right"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:textColor="@color/md_grey_500"
+            android:text="리그 순위표"/>
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:layout_marginEnd="4dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/league_detail_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:paddingStart="8dp"-->
+            <!--android:paddingEnd="8dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:gravity="right"-->
+            <!--android:textStyle="italic"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/md_grey_500"-->
+            <!--android:text="상세정보"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

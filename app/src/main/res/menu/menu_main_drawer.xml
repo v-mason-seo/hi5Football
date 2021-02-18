@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_arena"
+        android:title="아레나"
+        android:visible="false"/>
+
+    <!--<item android:title="커뮤니티">-->
+
+        <!--<menu>-->
+
+            <!--<group android:checkableBehavior="single">-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_all"-->
+                    <!--android:title="@string/nav_menu_board_all" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_football"-->
+                    <!--android:title="@string/nav_menu_board_football" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_scout"-->
+                    <!--android:title="@string/nav_menu_board_scout" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_match_report"-->
+                    <!--android:title="@string/nav_menu_board_match_report" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_column"-->
+                    <!--android:title="@string/nav_menu_board_column"-->
+                    <!--android:visible="false"/>-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_football_news"-->
+                    <!--android:title="@string/nav_menu_board_football_news"-->
+                    <!--android:visible="false"/>-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_general"-->
+                    <!--android:title="@string/nav_menu_board_general"-->
+                    <!--android:visible="true"/>-->
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_board_humor"-->
+                    <!--android:title="@string/nav_menu_board_humor" />-->
+
+            <!--</group>-->
+
+        <!--</menu>-->
+
+    <!--</item>-->
+
+    <item android:title="데이터센터">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_board_club"
+                    android:title="@string/nav_menu_board_club" />
+
+                <item
+                    android:id="@+id/nav_board_player"
+                    android:title="@string/nav_menu_board_player" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+
+    <item android:title="관리 / 설정">
+        <menu>
+
+            <item
+                android:id="@+id/nav_board_notification"
+                android:title="@string/nav_menu_board_notification"
+                android:icon="@drawable/ic_notifications"
+                android:iconTint="@color/md_grey_500"/>
+
+            <item
+                android:id="@+id/nav_board_instruction"
+                android:title="@string/nav_menu_board_instruction"
+                android:icon="@drawable/ic_import_contacts_vector"/>
+
+            <item
+                android:id="@+id/nav_board_issue"
+                android:title="@string/nav_menu_board_issue"
+                android:icon="@drawable/ic_create"
+                android:iconTint="@color/md_grey_500"/>
+
+            <item
+                android:id="@+id/nav_board_report"
+                android:title="@string/nav_menu_board_report"
+                android:icon="@drawable/ic_report_vector"
+                android:iconTint="@color/md_grey_500"
+                android:visible="false"/>
+
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:iconTint="@color/md_grey_500"
+                android:title="설정" />
+
+            <item
+                android:id="@+id/nav_administrator"
+                android:icon="@drawable/ic_settings_system"
+                android:iconTint="@color/md_grey_500"
+                android:visible="false"
+                android:title="관리자" />
+        </menu>
+    </item>
+
+</menu>

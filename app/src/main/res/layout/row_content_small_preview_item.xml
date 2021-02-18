@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="4dp"
+        app:srcCompat="@drawable/ic_soccer_ball_vector2"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginEnd="4dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/md_grey_800"
+            android:textSize="15dp"
+            tools:text="Title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+                <!--android:id="@+id/board_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginEnd="6dp"-->
+                <!--android:background="@drawable/bg_rounded_rectangle_border_grey"-->
+                <!--android:textColor="@color/md_grey_700"-->
+                <!--android:textSize="10sp"-->
+                <!--tools:text="boardName" />-->
+
+            <!--유저-->
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="user info"
+                android:textColor="@color/md_green_500"
+                android:gravity="center_vertical"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/tv_created"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/md_grey_500"
+                android:textSize="11sp"
+                android:gravity="center_vertical"
+                tools:text="2 hours ago" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_hifive"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_clap_vector"/>
+
+            <TextView
+                android:id="@+id/tv_hifive_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:paddingStart="4dp"
+                android:textColor="@color/md_grey_500"
+                android:textSize="12sp"
+                tools:text="123" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_scraped"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_scrap_border"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/comment_box"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_100"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/comment_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_comment"/>
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_grey_900"
+            android:textSize="13sp"
+            android:gravity="center"
+            tools:text="0" />
+
+    </LinearLayout>
+
+</LinearLayout>

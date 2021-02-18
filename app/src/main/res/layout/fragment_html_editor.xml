@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.ddastudio.hifivefootball_android.content_editor.HtmlEditorFragment">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/fbx_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:visibility="gone"
+            app:alignContent="space_around"
+            app:alignItems="flex_start"
+            app:dividerDrawable="@drawable/div"
+            app:flexWrap="wrap"
+            app:showDivider="middle"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editor_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_grey_700"
+                    android:hint="@string/title_hint"
+                    android:inputType="text"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="16dp"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"/>
+
+                <com.ddastudio.hifivefootball_android.ui.richeditor.RichEditor
+                    android:id="@+id/editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:scrollbars="vertical"/>
+
+                <!--android:layout_weight="1"-->
+                <!--android:windowSoftInputMode="adjustResize"-->
+                <!--android:overScrollMode="always"-->
+                <!--android:scrollbarStyle="insideInset"-->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+        <!--android:state_enabled="false"-->
+        <!--android:color="#9e9e9e"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:state_enabled="true"-->
+        <!--android:color="#56934d"-->
+        <!--/>-->
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="50dip" />
+            <stroke android:width="1dip" android:color="@color/transparent"/>
+            <solid android:color="@color/md_blue_400"/>
+            <padding
+                android:left="8dp"
+                android:bottom="4dp"
+                android:right="8dp"
+                android:top="4dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="50dip" />
+            <stroke android:width="1dip" android:color="@color/transparent" />
+            <solid android:color="@color/md_blue_400"/>
+            <padding
+                android:left="8dp"
+                android:bottom="4dp"
+                android:right="8dp"
+                android:top="4dp"/>
+        </shape>
+    </item>
+
+
+    <!--<item android:state_activated="true" android:state_pressed="true" android:drawable="@android:color/holo_red_light" />-->
+    <!--<item android:state_activated="true" android:state_focused="true" android:drawable="@android:color/holo_purple" />-->
+    <!--<item android:state_activated="true" android:drawable="@android:color/holo_orange_dark" />-->
+
+    <!--<item android:state_pressed="true" android:drawable="@android:color/holo_blue_light" />-->
+    <!--<item android:state_focused="true" android:drawable="@android:color/holo_green_light" />-->
+    <!--<item android:drawable="@android:color/transparent" />-->
+</selector>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/PostCardViewStyle">
+
+    <LinearLayout
+        android:id="@+id/column_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                tools:src="@drawable/ic_person"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="14sp"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/tv_updated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="11sp"
+                    tools:text="2 hours ago" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_profile"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="1"-->
+                <!--android:textColor="@color/md_grey_500"-->
+                <!--android:textSize="12sp"-->
+                <!--tools:text="" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.ddastudio.hifivefootball_android.content_list.widget.BadgedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="12dp"
+            app:badgeGravity="bottom|end"
+            app:badgePadding="8dp"
+            app:badgeColor="@color/md_grey_200"
+            tools:src="@drawable/background_11"/>
+
+        <!--임시로 둔 코드 -> ContentViewHolder 클래스 완료후 삭제하자-->
+        <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="180dp"
+        android:visibility="gone"
+        app:resize_mode="fixed_width"
+        app:surface_type="texture_view"
+        app:use_controller="false"
+        />
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_media"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="180dp"-->
+            <!--android:layout_marginBottom="12dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_image"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="180dp"-->
+                <!--tools:src="@drawable/background_11"/>-->
+
+            <!--<com.google.android.exoplayer2.ui.PlayerView-->
+                <!--android:id="@+id/player"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:minHeight="180dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:resize_mode="fixed_width"-->
+                <!--app:surface_type="texture_view"-->
+                <!--app:use_controller="false"-->
+                <!--/>-->
+
+        <!--</FrameLayout>-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/md_grey_900"
+            android:textSize="18sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingBottom="12dp"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="2.2dp"
+            android:textColor="@color/md_grey_600"
+            android:textSize="14sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            tools:text="Preview" />
+
+        <include
+            android:id="@+id/include_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            layout="@layout/row_editor_match_header_item"/>
+
+        <include
+            android:id="@+id/include_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            layout="@layout/row_editor_team_header_item"/>
+
+        <include
+            android:id="@+id/include_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            layout="@layout/row_editor_player_header_item"/>
+
+        <View
+            android:id="@+id/v_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/md_grey_200"/>
+
+        <include
+            android:id="@+id/include_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            layout="@layout/row_content_bottom_item"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

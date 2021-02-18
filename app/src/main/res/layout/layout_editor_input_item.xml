@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@color/md_grey_200">
+
+        <ImageView
+            android:id="@+id/iv_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_attachment"/>
+
+        <EditText
+            android:id="@+id/et_chatbox"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:layout_height="match_parent"
+            android:hint="내용을 입력하세요"
+            android:background="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:maxLines="6"/>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_send_message"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:padding="12dp"
+                android:background="@color/md_blue_500"
+                android:src="@drawable/ic_send_vector"/>
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="@color/md_grey_600"
+                android:visibility="visible"
+                android:text="#"/>
+
+        </FrameLayout>
+
+
+
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:text="SEND"
+            android:textSize="14dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".content_editor.TextEditorFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/md_grey_100"
+                android:layout_alignParentBottom="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_print_html"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="P Html"/>
+
+                    <Button
+                        android:id="@+id/btn_add_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="IMG"/>
+
+                    <Button
+                        android:id="@+id/btn_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bold"/>
+
+                    <Button
+                        android:id="@+id/btn_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Link"/>
+
+                    <Button
+                        android:id="@+id/btn_Quote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Quote"/>
+
+                    <Button
+                        android:id="@+id/btn_add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="image"/>
+
+                    <Button
+                        android:id="@+id/btn_add_html"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="html"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+
+
+            <Spinner
+                android:id="@+id/editor_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingStart="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/md_grey_200"/>
+
+            <EditText
+                android:id="@+id/editor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoCorrect|textAutoComplete|textCapSentences"
+                android:hint="제목"
+                android:background="@color/transparent"
+                android:singleLine="true"
+                android:textColor="@color/md_grey_300"
+                android:textSize="16sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingStart="16dp"
+                android:nextFocusDown="@id/editor_text"
+                android:lines="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/md_grey_200"/>
+
+            <com.ddastudio.hifivefootball_android.content_editor.utils.HifiveTextEditor
+                android:id="@+id/et_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:hint="내용을 입력하세요"
+                android:gravity="top"
+                android:enabled="true"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

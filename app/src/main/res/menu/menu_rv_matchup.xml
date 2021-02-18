@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_open_match_activity"
+        android:title="@string/menu_open_match_activity"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_open_match_chat_activity"
+        android:title="@string/menu_open_match_chat_activity" />
+
+    <item
+        android:id="@+id/menu_show_league_table"
+        android:title="@string/menu_show_league_table" />
+
+    <item
+        android:id="@+id/menu_show_match_id"
+        android:title="@string/menu_show_match_id" />
+
+</menu>

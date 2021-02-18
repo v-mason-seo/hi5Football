@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_report_content"
+        android:title="@string/menu_open_report_content"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/menu_show_content_id"
+        android:title="@string/menu_show_content_id"
+        android:visible="true"/>
+</menu>
